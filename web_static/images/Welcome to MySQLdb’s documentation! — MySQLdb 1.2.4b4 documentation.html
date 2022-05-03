@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" style="" lang="en"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Welcome to MySQLdb’s documentation! — MySQLdb 1.2.4b4 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" async="" src="Welcome%20to%20MySQLdb%E2%80%99s%20documentation!%20%E2%80%94%20MySQLdb%201.2.4b4%20documentation_files/analytics.js"></script><script type="text/javascript" src="Welcome%20to%20MySQLdb%E2%80%99s%20documentation!%20%E2%80%94%20MySQLdb%201.2.4b4%20documentation_files/modernizr.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="Welcome%20to%20MySQLdb%E2%80%99s%20documentation!%20%E2%80%94%20MySQLdb%201.2.4b4%20documentation_files/documentation_options.js"></script>
+        <script type="text/javascript" src="Welcome%20to%20MySQLdb%E2%80%99s%20documentation!%20%E2%80%94%20MySQLdb%201.2.4b4%20documentation_files/jquery.js"></script>
+        <script type="text/javascript" src="Welcome%20to%20MySQLdb%E2%80%99s%20documentation!%20%E2%80%94%20MySQLdb%201.2.4b4%20documentation_files/underscore.js"></script>
+        <script type="text/javascript" src="Welcome%20to%20MySQLdb%E2%80%99s%20documentation!%20%E2%80%94%20MySQLdb%201.2.4b4%20documentation_files/doctools.js"></script>
+        <script type="text/javascript" src="Welcome%20to%20MySQLdb%E2%80%99s%20documentation!%20%E2%80%94%20MySQLdb%201.2.4b4%20documentation_files/language_data.js"></script>
+        <script type="text/javascript" src="Welcome%20to%20MySQLdb%E2%80%99s%20documentation!%20%E2%80%94%20MySQLdb%201.2.4b4%20documentation_files/readthedocs-doc-embed.js"></script>
+    
+    <script type="text/javascript" src="Welcome%20to%20MySQLdb%E2%80%99s%20documentation!%20%E2%80%94%20MySQLdb%201.2.4b4%20documentation_files/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="Welcome%20to%20MySQLdb%E2%80%99s%20documentation!%20%E2%80%94%20MySQLdb%201.2.4b4%20documentation_files/theme.css" type="text/css">
+  <link rel="stylesheet" href="Welcome%20to%20MySQLdb%E2%80%99s%20documentation!%20%E2%80%94%20MySQLdb%201.2.4b4%20documentation_files/pygments.css" type="text/css">
+    <link rel="index" title="Index" href="https://mysqlclient.readthedocs.io/genindex.html">
+    <link rel="search" title="Search" href="https://mysqlclient.readthedocs.io/search.html">
+    <link rel="next" title="MySQLdb User’s Guide" href="https://mysqlclient.readthedocs.io/user_guide.html"> 
+
+<!-- RTD Extra Head -->
+
+<!-- 
+Always link to the latest version, as canonical.
+http://docs.readthedocs.org/en/latest/canonical.html
+-->
+<link rel="canonical" href="https://mysqlclient.readthedocs.io/">
+
+<link rel="stylesheet" href="Welcome%20to%20MySQLdb%E2%80%99s%20documentation!%20%E2%80%94%20MySQLdb%201.2.4b4%20documentation_files/readthedocs-doc-embed.css" type="text/css">
+
+<script type="text/javascript" src="Welcome%20to%20MySQLdb%E2%80%99s%20documentation!%20%E2%80%94%20MySQLdb%201.2.4b4%20documentation_files/readthedocs-data.js"></script>
+
+<!-- Add page-specific data, which must exist in the page js, not global -->
+<script type="text/javascript">
+READTHEDOCS_DATA['page'] = "index"
+READTHEDOCS_DATA['source_suffix'] = ".rst"
+</script>
+
+<script type="text/javascript" src="Welcome%20to%20MySQLdb%E2%80%99s%20documentation!%20%E2%80%94%20MySQLdb%201.2.4b4%20documentation_files/readthedocs-analytics.js"></script><script src="Welcome%20to%20MySQLdb%E2%80%99s%20documentation!%20%E2%80%94%20MySQLdb%201.2.4b4%20documentation_files/js.js" type="text/javascript" async=""></script>
+
+<!-- end RTD <extrahead> -->
+<script src="Welcome%20to%20MySQLdb%E2%80%99s%20documentation!%20%E2%80%94%20MySQLdb%201.2.4b4%20documentation_files/ethicalads.js" type="text/javascript" async="" id="ethicaladsjs"></script><style>[data-ea-publisher].loaded,[data-ea-type].loaded{font-size:14px;font-family:-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;font-weight:normal;font-style:normal;leter-spacing:0px;vertical-align:baseline;line-height:1.3em}[data-ea-publisher].loaded a,[data-ea-type].loaded a{text-decoration:none}[data-ea-publisher].loaded .ea-pixel,[data-ea-type].loaded .ea-pixel{display:none}[data-ea-publisher].loaded .ea-content,[data-ea-type].loaded .ea-content{margin:1em 1em 0.5em 1em;padding:1em;background:rgba(0,0,0,0.03);color:#505050}[data-ea-publisher].loaded .ea-content a:link,[data-ea-type].loaded .ea-content a:link{color:#505050}[data-ea-publisher].loaded .ea-content a:visited,[data-ea-type].loaded .ea-content a:visited{color:#505050}[data-ea-publisher].loaded .ea-content a:hover,[data-ea-type].loaded .ea-content a:hover{color:#373737}[data-ea-publisher].loaded .ea-content a:active,[data-ea-type].loaded .ea-content a:active{color:#373737}[data-ea-publisher].loaded .ea-content a strong,[data-ea-publisher].loaded .ea-content a b,[data-ea-type].loaded .ea-content a strong,[data-ea-type].loaded .ea-content a b{color:#088cdb}[data-ea-publisher].loaded .ea-callout a:link,[data-ea-type].loaded .ea-callout a:link{color:#6a6a6a}[data-ea-publisher].loaded .ea-callout a:visited,[data-ea-type].loaded .ea-callout a:visited{color:#6a6a6a}[data-ea-publisher].loaded .ea-callout a:hover,[data-ea-type].loaded .ea-callout a:hover{color:#505050}[data-ea-publisher].loaded .ea-callout a:active,[data-ea-type].loaded .ea-callout a:active{color:#505050}[data-ea-publisher].loaded .ea-callout a strong,[data-ea-publisher].loaded .ea-callout a b,[data-ea-type].loaded .ea-callout a strong,[data-ea-type].loaded .ea-callout a b{color:#088cdb}[data-ea-publisher].loaded .ea-callout a,[data-ea-type].loaded .ea-callout a{font-size:0.8em}[data-ea-publisher].loaded.dark .ea-content,[data-ea-type].loaded.dark .ea-content{background:rgba(255,255,255,0.05);color:#dcdcdc}[data-ea-publisher].loaded.dark .ea-content a:link,[data-ea-type].loaded.dark .ea-content a:link{color:#dcdcdc}[data-ea-publisher].loaded.dark .ea-content a:visited,[data-ea-type].loaded.dark .ea-content a:visited{color:#dcdcdc}[data-ea-publisher].loaded.dark .ea-content a:hover,[data-ea-type].loaded.dark .ea-content a:hover{color:#f6f6f6}[data-ea-publisher].loaded.dark .ea-content a:active,[data-ea-type].loaded.dark .ea-content a:active{color:#f6f6f6}[data-ea-publisher].loaded.dark .ea-content a strong,[data-ea-publisher].loaded.dark .ea-content a b,[data-ea-type].loaded.dark .ea-content a strong,[data-ea-type].loaded.dark .ea-content a b{color:#50baf9}[data-ea-publisher].loaded.dark .ea-callout a:link,[data-ea-type].loaded.dark .ea-callout a:link{color:#c3c3c3}[data-ea-publisher].loaded.dark .ea-callout a:visited,[data-ea-type].loaded.dark .ea-callout a:visited{color:#c3c3c3}[data-ea-publisher].loaded.dark .ea-callout a:hover,[data-ea-type].loaded.dark .ea-callout a:hover{color:#dcdcdc}[data-ea-publisher].loaded.dark .ea-callout a:active,[data-ea-type].loaded.dark .ea-callout a:active{color:#dcdcdc}[data-ea-publisher].loaded.dark .ea-callout a strong,[data-ea-publisher].loaded.dark .ea-callout a b,[data-ea-type].loaded.dark .ea-callout a strong,[data-ea-type].loaded.dark .ea-callout a b{color:#50baf9}@media (prefers-color-scheme: dark){[data-ea-publisher].loaded.adaptive .ea-content,[data-ea-type].loaded.adaptive .ea-content{background:rgba(255,255,255,0.05);color:#dcdcdc}[data-ea-publisher].loaded.adaptive .ea-content a:link,[data-ea-type].loaded.adaptive .ea-content a:link{color:#dcdcdc}[data-ea-publisher].loaded.adaptive .ea-content a:visited,[data-ea-type].loaded.adaptive .ea-content a:visited{color:#dcdcdc}[data-ea-publisher].loaded.adaptive .ea-content a:hover,[data-ea-type].loaded.adaptive .ea-content a:hover{color:#f6f6f6}[data-ea-publisher].loaded.adaptive .ea-content a:active,[data-ea-type].loaded.adaptive .ea-content a:active{color:#f6f6f6}[data-ea-publisher].loaded.adaptive .ea-content a strong,[data-ea-publisher].loaded.adaptive .ea-content a b,[data-ea-type].loaded.adaptive .ea-content a strong,[data-ea-type].loaded.adaptive .ea-content a b{color:#50baf9}[data-ea-publisher].loaded.adaptive .ea-callout a:link,[data-ea-type].loaded.adaptive .ea-callout a:link{color:#c3c3c3}[data-ea-publisher].loaded.adaptive .ea-callout a:visited,[data-ea-type].loaded.adaptive .ea-callout a:visited{color:#c3c3c3}[data-ea-publisher].loaded.adaptive .ea-callout a:hover,[data-ea-type].loaded.adaptive .ea-callout a:hover{color:#dcdcdc}[data-ea-publisher].loaded.adaptive .ea-callout a:active,[data-ea-type].loaded.adaptive .ea-callout a:active{color:#dcdcdc}[data-ea-publisher].loaded.adaptive .ea-callout a strong,[data-ea-publisher].loaded.adaptive .ea-callout a b,[data-ea-type].loaded.adaptive .ea-callout a strong,[data-ea-type].loaded.adaptive .ea-callout a b{color:#50baf9}}[data-ea-publisher].loaded .ea-content,[data-ea-type].loaded .ea-content{border:0px;border-radius:3px;box-shadow:0px 2px 3px rgba(0,0,0,0.15)}[data-ea-publisher].loaded.raised .ea-content,[data-ea-type].loaded.raised .ea-content{border:0px;border-radius:3px;box-shadow:0px 2px 3px rgba(0,0,0,0.15)}[data-ea-publisher].loaded.bordered .ea-content,[data-ea-type].loaded.bordered .ea-content{border:1px solid rgba(0,0,0,0.04);border-radius:3px;box-shadow:none}[data-ea-publisher].loaded.bordered.dark .ea-content,[data-ea-type].loaded.bordered.dark .ea-content{border:1px solid rgba(255,255,255,0.07)}@media (prefers-color-scheme: dark){[data-ea-publisher].loaded.bordered.adaptive .ea-content,[data-ea-type].loaded.bordered.adaptive .ea-content{border:1px solid rgba(255,255,255,0.07)}}[data-ea-publisher].loaded.flat .ea-content,[data-ea-type].loaded.flat .ea-content{border:0px;border-radius:3px;box-shadow:none}[data-ea-type="image"].loaded,[data-ea-publisher]:not([data-ea-type]).loaded,.ea-type-image{display:inline-block}[data-ea-type="image"].loaded .ea-content,[data-ea-publisher]:not([data-ea-type]).loaded .ea-content,.ea-type-image .ea-content{max-width:180px;overflow:auto;text-align:center}[data-ea-type="image"].loaded .ea-content>a>img,[data-ea-publisher]:not([data-ea-type]).loaded .ea-content>a>img,.ea-type-image .ea-content>a>img{width:120px;height:90px;display:inline-block}[data-ea-type="image"].loaded .ea-content>.ea-text,[data-ea-publisher]:not([data-ea-type]).loaded .ea-content>.ea-text,.ea-type-image .ea-content>.ea-text{margin-top:1em;font-size:1em;text-align:center}[data-ea-type="image"].loaded .ea-callout,[data-ea-publisher]:not([data-ea-type]).loaded .ea-callout,.ea-type-image .ea-callout{max-width:180px;margin:0em 1em 1em 1em;padding-left:1em;padding-right:1em;font-style:italic;text-align:right}[data-ea-type="image"].loaded.horizontal .ea-content,[data-ea-publisher]:not([data-ea-type]).loaded.horizontal .ea-content,.ea-type-image.horizontal .ea-content{max-width:320px}[data-ea-type="image"].loaded.horizontal .ea-content>a>img,[data-ea-publisher]:not([data-ea-type]).loaded.horizontal .ea-content>a>img,.ea-type-image.horizontal .ea-content>a>img{float:left;margin-right:1em}[data-ea-type="image"].loaded.horizontal .ea-content .ea-text,[data-ea-publisher]:not([data-ea-type]).loaded.horizontal .ea-content .ea-text,.ea-type-image.horizontal .ea-content .ea-text{margin-top:0em;text-align:left;overflow:auto}[data-ea-type="image"].loaded.horizontal .ea-callout,[data-ea-publisher]:not([data-ea-type]).loaded.horizontal .ea-callout,.ea-type-image.horizontal .ea-callout{max-width:320px;text-align:right}[data-ea-type="text"].loaded,.ea-type-text{font-size:14px}[data-ea-type="text"].loaded .ea-content,.ea-type-text .ea-content{text-align:left}[data-ea-type="text"].loaded .ea-callout,.ea-type-text .ea-callout{margin:0.5em 1em 1em 1em;padding-left:1em;padding-right:1em;text-align:right;font-style:italic}[data-ea-style="stickybox"].loaded .ea-type-image{z-index:10;position:fixed;bottom:20px;right:20px}[data-ea-style="stickybox"].loaded .ea-type-image .ea-stickybox-hide{cursor:pointer;position:absolute;top:0.75em;right:0.75em;background-color:#fefefe;border:1px solid #088cdb;border-radius:50%;color:#088cdb;font-size:1em;text-align:center;height:1.5em;width:1.5em;line-height:1.5em}@media (max-width: 1300px){[data-ea-style="stickybox"].loaded .ea-type-image{position:static;bottom:0;right:0;margin:auto;text-align:center}[data-ea-style="stickybox"].loaded .ea-type-image .ea-stickybox-hide{display:none}}@media (min-width: 1301px){[data-ea-style="stickybox"].loaded .ea-type-image .ea-content{background:#dcdcdc}[data-ea-style="stickybox"].loaded.dark .ea-type-image .ea-content{background:#505050}}@media (min-width: 1301px) and (prefers-color-scheme: dark){[data-ea-style="stickybox"].loaded.adaptive .ea-type-image .ea-content{background:#505050}}
+</style><script src="Welcome%20to%20MySQLdb%E2%80%99s%20documentation!%20%E2%80%94%20MySQLdb%201.2.4b4%20documentation_files/a.js" type="text/javascript" async=""></script></head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="#" class="icon icon-home"> MySQLdb
+          
+
+          
+          </a>
+
+          
+            
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="https://mysqlclient.readthedocs.io/user_guide.html">MySQLdb User’s Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mysqlclient.readthedocs.io/MySQLdb.html">MySQLdb Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://mysqlclient.readthedocs.io/FAQ.html">MySQLdb Frequently Asked Questions</a></li>
+</ul>
+
+            
+          
+        </div>
+      <div id="rtd-sidebar" data-ea-publisher="readthedocs" data-ea-type="readthedocs-sidebar" data-ea-manual="true" class="ethical-rtd ethical-dark-theme loaded" data-ea-keywords="mysql|python|readthedocs-project-41967|readthedocs-project-mysqlclient" data-ea-campaign-types="community|house|paid"><div class="ethical-sidebar"><div class="ethical-content"><a href="https://server.ethicalads.io/proxy/click/2324/31b8aa7a-2e9a-4eda-8e0c-134e6e1d9c28/" rel="nofollow noopener" target="_blank" class="ethical-image-link"><img src="Welcome%20to%20MySQLdb%E2%80%99s%20documentation!%20%E2%80%94%20MySQLdb%201.2.4b4%20documentation_files/apilayer_logo.png" alt="Sponsored: Apilayer"></a><div class="ethical-text"><a href="https://server.ethicalads.io/proxy/click/2324/31b8aa7a-2e9a-4eda-8e0c-134e6e1d9c28/" rel="nofollow noopener" target="_blank"><strong>APILayer Marketplace </strong><span>Find +60 APIs to help your automation journey.</span><strong> Try and scale as need!</strong></a></div></div><div class="ethical-callout"><small><em><a rel="nofollow noopener" target="_blank" href="https://ethicalads.io/?ref=rtd-sidebar">Ad by EthicalAds</a><span> &nbsp; · &nbsp; </span><a rel="nofollow noopener" target="_blank" href="https://www.ethicalads.io/publishers/?ref=rtd-sidebar-join">Monetize your site</a></em></small></div></div><img src="Welcome%20to%20MySQLdb%E2%80%99s%20documentation!%20%E2%80%94%20MySQLdb%201.2.4b4%20documentation_files/a.svg" class="ea-pixel"></div></div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">MySQLdb</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> »</li>
+        
+      <li>Welcome to MySQLdb’s documentation!</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/PyMySQL/mysqlclient-python/blob/master/doc/index.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="welcome-to-mysqldb-s-documentation">
+<h1>Welcome to MySQLdb’s documentation!<a class="headerlink" href="#welcome-to-mysqldb-s-documentation" title="Permalink to this headline">¶</a></h1>
+<p>Contents:</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://mysqlclient.readthedocs.io/user_guide.html">MySQLdb User’s Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://mysqlclient.readthedocs.io/user_guide.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://mysqlclient.readthedocs.io/user_guide.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://mysqlclient.readthedocs.io/user_guide.html#mysqldb-mysql">MySQLdb._mysql</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://mysqlclient.readthedocs.io/user_guide.html#mysql-c-api-translation">MySQL C API translation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://mysqlclient.readthedocs.io/user_guide.html#mysql-c-api-function-mapping">MySQL C API function mapping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://mysqlclient.readthedocs.io/user_guide.html#some-mysql-examples">Some _mysql examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://mysqlclient.readthedocs.io/user_guide.html#mysqldb">MySQLdb</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://mysqlclient.readthedocs.io/user_guide.html#functions-and-attributes">Functions and attributes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://mysqlclient.readthedocs.io/user_guide.html#connection-objects">Connection Objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://mysqlclient.readthedocs.io/user_guide.html#cursor-objects">Cursor Objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://mysqlclient.readthedocs.io/user_guide.html#some-examples">Some examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://mysqlclient.readthedocs.io/user_guide.html#using-and-extending">Using and extending</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://mysqlclient.readthedocs.io/MySQLdb.html">MySQLdb Package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://mysqlclient.readthedocs.io/MySQLdb.html#id1"><code class="docutils literal notranslate"><span class="pre">MySQLdb</span></code> Package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://mysqlclient.readthedocs.io/MySQLdb.html#module-MySQLdb.connections"><code class="docutils literal notranslate"><span class="pre">connections</span></code> Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://mysqlclient.readthedocs.io/MySQLdb.html#module-MySQLdb.converters"><code class="docutils literal notranslate"><span class="pre">converters</span></code> Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://mysqlclient.readthedocs.io/MySQLdb.html#module-MySQLdb.cursors"><code class="docutils literal notranslate"><span class="pre">cursors</span></code> Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://mysqlclient.readthedocs.io/MySQLdb.html#module-MySQLdb.times"><code class="docutils literal notranslate"><span class="pre">times</span></code> Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://mysqlclient.readthedocs.io/MySQLdb.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://mysqlclient.readthedocs.io/MySQLdb.constants.html">constants Package</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://mysqlclient.readthedocs.io/FAQ.html">MySQLdb Frequently Asked Questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://mysqlclient.readthedocs.io/FAQ.html#build-errors">Build Errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://mysqlclient.readthedocs.io/FAQ.html#importerror">ImportError</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://mysqlclient.readthedocs.io/FAQ.html#my-data-disappeared-or-won-t-go-away">My data disappeared! (or won’t go away!)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://mysqlclient.readthedocs.io/FAQ.html#other-errors">Other Errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://mysqlclient.readthedocs.io/FAQ.html#other-resources">Other Resources</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="https://mysqlclient.readthedocs.io/genindex.html"><span class="std std-ref">Index</span></a></li>
+<li><a class="reference internal" href="https://mysqlclient.readthedocs.io/py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
+<li><a class="reference internal" href="https://mysqlclient.readthedocs.io/search.html"><span class="std std-ref">Search Page</span></a></li>
+</ul>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="https://mysqlclient.readthedocs.io/user_guide.html" class="btn btn-neutral float-right" title="MySQLdb User’s Guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <p>
+        © Copyright 2012, Andy Dustman
+      
+        <span class="commit">
+          Revision <code>6c67620b</code>.
+        </span>
+      
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org/">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Read the Docs</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions"><!-- Inserted RTD Footer -->
+
+<div class="injected">
+
+  
+
+      
+      
+      
+      
+
+      
+      
+      <dl>
+        <dt>Downloads</dt>
+        
+        <dd><a href="https://mysqlclient.readthedocs.io/_/downloads/en/latest/htmlzip/">HTML</a></dd>
+        
+      </dl>
+      
+      
+
+      
+      <dl>
+        
+        <!-- These are kept as relative links for internal installs that are http -->
+        <dt>On Read the Docs</dt>
+        <dd>
+          <a href="https://readthedocs.org/projects/mysqlclient/">Project Home</a>
+        </dd>
+        <dd>
+          <a href="https://readthedocs.org/projects/mysqlclient/builds/">Builds</a>
+        </dd>
+        <dd>
+          <a href="https://readthedocs.org/projects/mysqlclient/downloads/">Downloads</a>
+        </dd>
+      </dl>
+      
+
+      
+
+      
+      <dl>
+        <dt>On GitHub</dt>
+        <dd>
+          <a href="https://github.com/PyMySQL/mysqlclient-python/blob/master/doc/index.rst">View</a>
+        </dd>
+        
+        <dd>
+          <a href="https://github.com/PyMySQL/mysqlclient-python/edit/master/doc/index.rst">Edit</a>
+        </dd>
+        
+      </dl>
+      
+      
+
+      
+      <dl>
+        <dt>Search</dt>
+        <dd>
+          <div style="padding: 6px;">
+            
+            <form id="flyout-search-form" class="wy-form" target="_blank" action="//readthedocs.org/projects/mysqlclient/search/" method="get">
+              <input type="text" name="q" aria-label="Search docs" placeholder="Search docs">
+              </form>
+          </div>
+        </dd>
+      </dl>
+      
+
+      <hr>
+
+      
+        <small>
+          <span>Hosted by <a href="https://readthedocs.org/">Read the Docs</a></span>
+          <span> · </span>
+          <a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+        </small>
+      
+
+      
+
+</div>
+</div>
+  </div>
+
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+   
+
+
+</body></html>

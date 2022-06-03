@@ -27,6 +27,7 @@ def do_pack():
 
 
 def do_deploy(archive_path):
+    """ deploy webstatic"""
     if archive_path:
         """Upload the archive to the /tmp/ directory of the web server"""
         put(archive_path, "/tmp/")
@@ -59,6 +60,7 @@ def do_deploy(archive_path):
 
 
 def deploy():
+    """deploy"""
     try:
         my_archive_path = do_pack()
         deploythis = do_deploy(my_archive_path)

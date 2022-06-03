@@ -17,6 +17,7 @@ env.hosts = ['localhost']
 
 
 def do_pack():
+    """pack files in webstatic"""
     try:
         fpath = "versions/web_static_" + datetime.now().\
                    strftime("%Y%m%d%H%M%S") + ".tgz"

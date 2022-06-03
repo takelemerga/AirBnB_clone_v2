@@ -25,6 +25,6 @@ def do_pack():
         local("tar -cvzf versions/web_static_$(date +%Y%m%d%H%M%S).tgz\
         web_static")
         return ("web_static packed: {} -> {}".
-              format(fpath, os.path.getsize(fpath)))
+                format(fpath, os.path.getsize(fpath)))
     except:
         return None

@@ -27,4 +27,4 @@ def do_pack():
         return ("web_static packed: {} -> {}".
               format(fpath, os.path.getsize(fpath)))
     except:
-            return None
+        return None

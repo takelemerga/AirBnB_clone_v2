@@ -7,6 +7,7 @@ env.hosts = ['3.226.97.36', '34.204.179.174']
 
 
 def do_deploy(archive_path):
+     """deploy webstatic"""
     if archive_path:
         """Upload the archive to the /tmp/ directory of the web server"""
         put(archive_path, "/tmp/")
